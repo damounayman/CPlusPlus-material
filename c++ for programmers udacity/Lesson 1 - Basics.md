@@ -44,5 +44,11 @@ int main()
     std::cout<<"What year is your favorite? ";
     //get the user response and assign it to the year<- this line is a comment
     std::cin >> year;
-    ...
 ```
+
+The command to compile is : 
+
+```sh
+ g++  main.cpp -o main.out
+ ```
+ 
