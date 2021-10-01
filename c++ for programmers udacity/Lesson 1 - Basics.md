@@ -51,4 +51,44 @@ The command to compile is :
 ```sh
  g++  main.cpp -o main.out
  ```
- 
+
+ # Using Namespace
+ Before the start of the main function, put in the command “using namespace std;”
+```cpp
+using namespace std;
+ int main()
+ {
+ }
+```
+This tells the compiler to assume we are using the standard library, so we don’t have to write std::.
+
+# Define Constants
+In C++ we can define a variable as a constant. Meaning, its value does not change for the life of the program.
+
+We use the keyword 'const' to define a constant.
+
+For example: 
+```cpp
+const int weightGoal = 100;
+ ```
+
+# Format Output
+The iomanip is a library in C++ which helps us in manipulating the output of any C++ program.
+
+setw: It helps in changing the width of the next input or output field.
+
+```cpp
+std::cout<<"Ints"<<std::setw(15)<<"Floats"<<std::setw(15)<<"Doubles"<< "\n";
+// Ints         Floats        Doubles
+ ```
+
+# FileI0 Steps:
+ - Include the <fstream> library 
+ - Create a stream (input, output, both)
+      - ofstream myfile; (for writing to a file)
+      - ifstream myfile; (for reading a file)
+      - fstream myfile; (for reading and writing a file)
+ - Open the file  myfile.open(“filename”);
+ - Write or read the file
+ - Close the file myfile.close();
+
