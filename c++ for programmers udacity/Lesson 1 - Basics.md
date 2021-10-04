@@ -116,3 +116,28 @@ The basic form of getline is:
 getline: it will retrieve characters from the std::cin source and stores them in the variable called variableName. It will retrieve all characters until the newline or “\n” is detected.
 
 The programmer can also specify a different delimiter if the newline character is not desired.
+
+# c++ special characters
+
+| Char | Special Symbol | Char            | Special Symbol |
+|------|----------------|-----------------|----------------|
+| ‘    | ’              | Newline         | n              |
+| “    | ”              | Carriage Return | r              |
+|      | \              | Tab             | t              |
+| NULL |                | Bell            | a              |
+
+# convert the string variable to a numeric variable.
+Steps for using Stringstream:
+
+Include the Stringstream library.
+```cpp
+    #include<sstream>
+```
+Use getline to get the string from the user
+```cpp
+    std::getline(std::cin, stringVariable);
+```
+Convert the string variable to a float variable.
+```cpp
+    std::stringstream(stringVariable) >> numericVariable;
+```
