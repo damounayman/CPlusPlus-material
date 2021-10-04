@@ -45,4 +45,4 @@ Postfix operators create a copy of the variable and increments the value of the 
 
 # Assignment operators
 
-[](./material/assignment.png)
+![](./material/assignment.png)
