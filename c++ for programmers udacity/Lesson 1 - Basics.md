@@ -92,3 +92,27 @@ std::cout<<"Ints"<<std::setw(15)<<"Floats"<<std::setw(15)<<"Doubles"<< "\n";
  - Write or read the file
  - Close the file myfile.close();
 
+# Header Files
+As we have seen we can include additional libraries in C++, we can also include our own libraries.
+
+Traditionally, these files are called header files and they have an .hpp extension. Although any extension will work.
+
+Header files contain information about how to do a task.
+The main program contains information about what to do.
+
+To tell the compiler to include the header file.
+
+```cpp
+ #include "main.hpp"
+ ```
+
+# String Input
+
+std::cin will not retrieve strings that have a space in them. It will see the space as the end of the input. We will obviously need a method to enter strings.
+C++ has a function called getline.
+
+The basic form of getline is:
+
+getline: it will retrieve characters from the std::cin source and stores them in the variable called variableName. It will retrieve all characters until the newline or “\n” is detected.
+
+The programmer can also specify a different delimiter if the newline character is not desired.
