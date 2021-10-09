@@ -87,3 +87,5 @@ class SampleClass {
         }
 };
 ```
+# long vs long long
+long is equivalent to long int, just as short is equivalent to short int. A long int is a signed integral type that is at least 32 bits, while a long long or long long int is a signed integral type is at least 64 bits.
