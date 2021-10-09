@@ -32,3 +32,6 @@ int main() {
 An array is a series of elements of the same type placed in contiguous memory locations that can be individually referenced by adding an index to a unique identifier.
 
 **Note**: Unlike $C, C++$ allows dynamic allocation of arrays at runtime without special calls like malloc(). If $n=10$, int arr $[n]$ will create an array with space for 10 integers.
+
+# What is the use of cin.ignore() in C++?
+ cin.ignore() will ignore what the cin buffer contains.
