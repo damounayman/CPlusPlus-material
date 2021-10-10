@@ -97,24 +97,129 @@ long is equivalent to long int, just as short is equivalent to short int. A long
 ```cpp
     vector<int>v; (creates an empty vector of integers)
 ```
+
 - Size:
 
 ```cpp
     int size=v.size();
 ```
+
 - Pushing an integer into a vector:
 
 ```cpp
     v.push_back(x);(where x is an integer.The size increases by 1 after this.)
 ```
+
 - Popping the last element from the vector:
 
 ```cpp
     v.pop_back(); (After this the size decreases by 1)
 ```
+
 - Sorting a vector:
 
 ```cpp
     sort(v.begin(),v.end()); (Will sort all the elements in the vector)
 ```
 
+- erase(int position):
+
+```cpp
+Removes the element present at position.  
+Ex: v.erase(v.begin()+4); (erases the fifth element of the vector v)
+```
+
+- erase(int start,int end):
+
+```cpp
+Removes the elements in the range from start to end inclusive of the start and exclusive of the end.
+Ex:v.erase(v.begin()+2,v.begin()+5);(erases all the elements from the third element to the fifth 
+```
+
+# Strings
+
+C++ provides a nice alternative data type to manipulate strings, and the data type is conveniently called string. Some of its widely used features are the following:
+
+- Declaration:
+
+```cpp
+    string a = "abc";
+```
+
+- Size:
+
+```cpp
+    int len = a.size();
+```
+
+- Concatenate two strings:
+
+```cpp
+    string a = "abc";
+    string b = "def";
+    string c = a + b; // c = "abcdef".
+```
+
+- Accessing $i^{th}$ element:
+
+```cpp
+string s = "abc";
+char   c0 = s[0];   // c0 = 'a'
+char   c1 = s[1];   // c1 = 'b'
+char   c2 = s[2];   // c2 = 'c'
+
+s[0] = 'z';         // s = "zbc"
+```
+# StringStream
+stringstream is a stream class to operate on strings. It implements input/output operations on memory (string) based streams. stringstream can be helpful in different type of parsing. The following operators/functions are commonly used here:
+
+- Operator >> Extracts formatted data.
+- Operator << Inserts formatted data.
+- Method str() Gets the contents of underlying string device object.
+- Method str(string) Sets the contents of underlying string device object.
+
+Its header file is sstream.
+
+One common use of this class is to parse comma-separated integers from a string (e.g., "23,4,56").
+
+```cpp
+stringstream ss("23,4,56");
+char ch;
+int a, b, c;
+ss >> a >> ch >> b >> ch >> c;  // a = 23, b = 4, c = 56
+```
+
+# Sets-STL
+
+Sets are a part of the C++ STL. Sets are containers that store unique elements following a specific order. Here are some of the frequently used member functions of sets:
+
+- Declaration:
+
+```cpp
+set<int>s; //Creates a set of integers.
+```
+
+- Size:
+
+```cpp
+int length=s.size(); //Gives the size of the set.
+```
+
+- Insert:
+
+```cpp
+s.insert(x); //Inserts an integer x into the set s.
+```
+
+- Erasing an element:
+
+```cpp
+s.erase(val); //Erases an integer val from the set s.
+```
+
+- Finding an element:
+
+```
+set<int>::iterator itr=s.find(val); //Gives the iterator to the element val if it is found otherwise returns s.end() .
+Ex: set<int>::iterator itr=s.find(100); //If 100 is not present then it==s.end().
+```
