@@ -89,3 +89,32 @@ class SampleClass {
 ```
 # long vs long long
 long is equivalent to long int, just as short is equivalent to short int. A long int is a signed integral type that is at least 32 bits, while a long long or long long int is a signed integral type is at least 64 bits.
+
+# Vector 
+
+- Declaration:
+
+```cpp
+    vector<int>v; (creates an empty vector of integers)
+```
+- Size:
+
+```cpp
+    int size=v.size();
+```
+- Pushing an integer into a vector:
+
+```cpp
+    v.push_back(x);(where x is an integer.The size increases by 1 after this.)
+```
+- Popping the last element from the vector:
+
+```cpp
+    v.pop_back(); (After this the size decreases by 1)
+```
+- Sorting a vector:
+
+```cpp
+    sort(v.begin(),v.end()); (Will sort all the elements in the vector)
+```
+
