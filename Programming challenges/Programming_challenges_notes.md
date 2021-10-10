@@ -219,7 +219,7 @@ s.erase(val); //Erases an integer val from the set s.
 
 - Finding an element:
 
-```
+```cpp
 set<int>::iterator itr=s.find(val); //Gives the iterator to the element val if it is found otherwise returns s.end() .
 Ex: set<int>::iterator itr=s.find(100); //If 100 is not present then it==s.end().
 ```
