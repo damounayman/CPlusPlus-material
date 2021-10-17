@@ -273,3 +273,84 @@ lower_bound for element 30 at position : 2
 lower_bound for element 35 at position : 5
 lower_bound for element 55 at position : 7
 ```
+# Sets-STL
+
+Sets are a part of the C++ STL. Sets are containers that store unique elements following a specific order. Here are some of the frequently used member functions of sets:
+
+- Declaration:
+
+```cpp
+set<int>s; //Creates a set of integers.
+```
+
+- Size:
+
+```cpp
+int length=s.size(); //Gives the size of the set.
+```
+
+- Insert:
+
+```cpp
+s.insert(x); //Inserts an integer x into the set s.
+```
+
+- Erasing an element:
+
+```cpp
+s.erase(val); //Erases an integer val from the set s.
+```
+
+- Finding an element:
+
+```cpp
+set<int>::iterator itr=s.find(val); //Gives the iterator to the element val if it is found otherwise returns s.end() .
+Ex: set<int>::iterator itr=s.find(100); //If 100 is not present then it==s.end().
+```
+
+# Maps-STL
+
+Maps are a part of the C++ STL.Maps are associative containers that store elements formed by a combination of a key value and a mapped value, following a specific order.The mainly used member functions of maps are:
+
+- Map Template:
+
+```cpp
+std::map <key_type, data_type>
+```
+
+- Declaration:
+
+``` cpp
+map<string,int>m; //Creates a map m where key_type is of type string and data_type is of type int.
+```
+
+- Size:
+
+```cpp
+int length=m.size(); //Gives the size of the map.
+```
+
+- Insert:
+
+```cpp
+m.insert(make_pair("hello",9)); //Here the pair is inserted into the map where the key is "hello" and the value associated with it is 9.
+```
+
+- Erasing an element:
+
+```cpp
+m.erase(val); //Erases the pair from the map where the key_type is val.
+```
+
+- Finding an element:
+
+```cpp
+map<string,int>::iterator itr=m.find(val); //Gives the iterator to the element val if it is found otherwise returns m.end() .
+Ex: map<string,int>::iterator itr=m.find("Maps"); //If Maps is not present as the key value then itr==m.end().
+```
+
+- Accessing the value stored in the key:
+
+```cpp
+To get the value stored of the key "MAPS" we can do m["MAPS"] or we can get the iterator using the find function and then by itr->second we can access the value.
+```
