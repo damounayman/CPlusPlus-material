@@ -10,4 +10,4 @@ This repository contains C++ material that I used to refresh my memory and prepa
 
 # Notes based on solving hackerrank challenges:
 
-- [Programming challenges notes]()
+- [Programming challenges notes](Programming%20challenges/Programming_challenges_notes.md)
