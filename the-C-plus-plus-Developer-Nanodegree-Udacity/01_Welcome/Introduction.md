@@ -3,6 +3,7 @@
 
 # 2- The C++ Core Guidelines:
 The C++ Core Guidelines are a set of best practices, recommendations, and rules for coding in C++ which have been developed by Bjarne Stroustrup and hundreds of other experts in the field. These guidelines are an important part of the language, as they help users to write the best, most up-to-date C++ programs
+``` http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#main ```
 
 # 3 Standard Library
 
@@ -31,7 +32,7 @@ C++ does not have an "official" compiler. Instead, there are many different comp
 - **GNU Compiler Collection (GCC)**:  
 The **GNU Compiler Collection**, is a popular, open-source, cross-platform compiler from the larger GNU Project. In particular, we use the g++ program, which is a command line executable that compiles C++ source code and automatically links the C++ Standard Library.
 
-![C++ Compilation Process (Wikimedia)](./docs/c-compilation-process.svg)
+![C++ Compilation Process (Wikimedia)](../docs/c-compilation-process.svg)
 
 In order to use classes and functions from the C++ Standard Library, the compiler must have access to a compiled version of the standard library, stored in object files. Most compiler implementations, including GCC, include those object files as part of the installation process. In order to use the Standard Library facilities, the compiler must "link" the standard library object files to the object files created from the programmer's source code.
 
@@ -43,6 +44,8 @@ Once the compiler links together the necessary object files, it is able to gener
 **Make** and **CMake** are two separate and similar build tools that both serve to help simplify the process of building software.
 
 In particular, build tools automate the process of compiling multiple source code files into object files, linking those object files together, and generating an executable. Build tools also often automate the process of determining which files have changed since the last build and thus need to be recompiled.
+
+```https://cmake.org/cmake/help/latest/guide/tutorial/index.html```
 
 # 7-Style:
 There are many different C++ styles, none of which is authoritative.
@@ -61,6 +64,7 @@ clang-format is a command line text formatter that automatically reformats sourc
 Debuggers are tools that allow you to pause the execution of your code in various locations, inspect the state of the program, and step through your code line-by-line.
 
 **GDB** and **LLDB** are two popular, open-source debuggers for C++. Integrating them into a code editor often makes debugging easier.
+```https://www.sourceware.org/gdb/```
 
 Why Is C++ the Choice for Industry?
 - work well with hardware

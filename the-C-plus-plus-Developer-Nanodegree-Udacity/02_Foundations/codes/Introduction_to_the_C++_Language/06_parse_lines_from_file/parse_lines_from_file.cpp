@@ -45,6 +45,6 @@ void printFile(const vector<vector<int>> dd_vector){
 
 int main(){
 
-    printFile(readFile("board.csv"));
+    printFile(readFile("../../board.csv"));
 
 }

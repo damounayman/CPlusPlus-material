@@ -53,7 +53,7 @@ void printFile(const vector<vector<State>> dd_vector) {
 
 int main() {
 
-  printFile(readFile("board.csv"));
+  printFile(readFile("../../board.csv"));
 
   return 0;
 }

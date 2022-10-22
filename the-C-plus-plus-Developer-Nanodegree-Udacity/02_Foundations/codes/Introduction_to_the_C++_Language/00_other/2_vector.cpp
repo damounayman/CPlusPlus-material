@@ -20,8 +20,5 @@ int main(int argc, char const *argv[])
     vect.push_back(100);
     std::cout << vect[0]<<std::endl;
     std::cout << vect.size()<<std::endl;
-    d
-
-
     return 0;
 }

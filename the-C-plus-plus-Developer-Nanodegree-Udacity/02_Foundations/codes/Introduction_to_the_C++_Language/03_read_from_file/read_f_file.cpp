@@ -8,7 +8,7 @@ using namespace std;
 
 int main() {
 
-  ifstream file("board.csv");
+  ifstream file("../../board.csv");
   if (file) {
     string line;
     while (getline(file, line)) {
