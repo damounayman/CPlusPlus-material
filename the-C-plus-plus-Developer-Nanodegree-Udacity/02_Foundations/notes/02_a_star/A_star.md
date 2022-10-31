@@ -37,7 +37,7 @@ The A* Search algorithm is an algorithm that is frequently used for path finding
 
 This algorithm described is very similar to other search algorithms you may have seen before, such as [breadth-first search ](https://en.wikipedia.org/wiki/Breadth-first_search), except for the additional step of computing a heuristic and using that heuristic (in addition to the cost) to find the next node.
 
-The following is psuedocode for the algorithm described in the video above. Although the pseudocode shows the complete algorithm in a single function, we will split parts of the algorithm into separate functions in this lesson so you can implement them step-by-step in a sequence of exercises:
+The following is psuedocode for the algorithm described in the video. Although the pseudocode shows the complete algorithm in a single function, we will split parts of the algorithm into separate functions in this lesson so you can implement them step-by-step in a sequence of exercises:
 
 **Search** ( *grid* , *initial_point* , *goal_point* ) :
 
